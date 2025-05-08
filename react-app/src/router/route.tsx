@@ -6,6 +6,14 @@ export const AppRouter = () => {
   return (
     <BrowserRouter>
       <Routes>
+        <Route
+          path="/test2"
+          element={
+            <>
+              <Home />
+            </>
+          }
+        />
         <Route path="/" element={<Home />} />
         <Route path="/contact/form" element={<Form />} />
         <Route path="/contact/confirm" element={<h1>確認</h1>} />
